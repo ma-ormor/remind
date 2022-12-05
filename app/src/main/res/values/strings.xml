@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Remind</string>
+
+    <string name="iniciarSesion">INICIAR SESIÓN</string>
+    <string name="registrarContrasena">REGISTRAR CONTRASEÑA</string>
+    <string name="eliminarContrasena">ELIMINAR CONTRASEÑA</string>
+
+    <string name="contrasena">contraseña</string>
+    <string name="rContrasena">repetir contraseña</string>
+    <string name="agregar">+</string>
+    <string name="modificar">*</string>
+    <string name="eliminar">x</string>
+    <string name="enlace">/</string>
+    <string name="aceptar">✓</string>
+    <string name="cancelar">x</string>
+    <string name="remind">REMIND</string>
+</resources>

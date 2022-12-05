@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="50dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/remind"
+            android:textAlignment="center"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/etVentana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciarSesion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/campos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:id="@+id/tvcontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contrasena" />-->
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:importantForAccessibility="no"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:hint="@string/contrasena" />
+
+        <!--<TextView
+            android:id="@+id/eRContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rContrasena" />-->
+
+        <EditText
+            android:id="@+id/rContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:importantForAccessibility="no"
+            android:textAlignment="center"
+            android:hint="@string/rContrasena"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="end|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:background="@drawable/boton_redondo"
+            android:theme="@style/Theme.Remind.BotonRojo"
+            android:text="@string/cancelar" />
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold"
+            android:background="@drawable/boton_redondo"
+            android:theme="@style/Theme.Remind.BotonVerde"
+            android:text="@string/aceptar" />
+    </LinearLayout>
+</LinearLayout>
